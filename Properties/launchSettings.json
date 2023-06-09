@@ -27,6 +27,16 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true,
+      "environmentVariables": {
+        "ConnectionStrings__DefaultConnection": "Server=my-developement-server-from-launch-settings;Database=MyDatabase;Trusted_Connection=True;MultipleActiveResultSets=true"
+      }
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
